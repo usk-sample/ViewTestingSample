@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var text: String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            
+            VStack(spacing: 16) {
+                TextField("input text", text: self.$text)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(.horizontal, 32)
+                NavigationLink.init("Next", destination: Text("Your input : \(self.text)"))
+            }
+            
+        }
+
     }
 }
 
