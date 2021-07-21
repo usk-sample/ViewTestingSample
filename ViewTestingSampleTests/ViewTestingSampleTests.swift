@@ -31,6 +31,8 @@ class ViewTestingSampleTests: XCTestCase {
         
         XCTAssertEqual(view.viewModel.text, "abcdefg")
         
+        add(XCTAttachment.init(image: view.snapshot()))
+        
     }
 
 }
