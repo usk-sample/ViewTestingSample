@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var text: String = ""
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         NavigationView {
             
             VStack(spacing: 16) {
-                TextField("input text", text: self.$text)
+                TextField("input text", text: self.$viewModel.text)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 32)
-                NavigationLink.init("Next", destination: Text("Your input : \(self.text)"))
+                NavigationLink.init("Next", destination: Text("Your input : \(self.viewModel.text)"))
             }
             
         }
