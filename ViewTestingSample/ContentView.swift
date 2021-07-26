@@ -18,7 +18,8 @@ struct ContentView: View {
                 TextField("input text", text: self.$viewModel.text)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 32)
-                NavigationLink.init("Next", destination: Text("Your input : \(self.viewModel.text)"))
+                NavigationLink.init("Next", destination: Text("Your input : \(self.viewModel.text)").accessibilityIdentifier("Destination"))
+                    .accessibilityIdentifier("Next")
             }
             
         }
