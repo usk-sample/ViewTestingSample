@@ -27,6 +27,12 @@ class ViewTestingSampleUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
+        app.cells.element(boundBy: 0).tap()
+//        app.tables.firstMatch.cells.element(boundBy: 0).tap()
+        
+        
+        app.swipeUp()
+        
         let textField = app.textFields.firstMatch
         textField.tap() //focus keyboard
         textField.typeText("abc")

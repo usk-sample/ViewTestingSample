@@ -14,13 +14,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             
-            VStack(spacing: 16) {
-                TextField("input text", text: self.$viewModel.text)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 32)
-                NavigationLink.init("Next", destination: Text("Your input : \(self.viewModel.text)").accessibilityIdentifier("Destination"))
-                    .accessibilityIdentifier("Next")
+            List {
+                NavigationLink.init("Simple Navigation", destination: SimpleNavigationView())
+                NavigationLink.init("Login Form", destination: LoginFormView())
             }
+            .navigationBarTitle("View Testing")
             
         }
 
