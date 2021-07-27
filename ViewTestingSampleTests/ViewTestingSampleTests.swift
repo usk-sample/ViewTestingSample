@@ -12,6 +12,7 @@ import ViewInspector
 @testable import ViewTestingSample
 
 extension ContentView: Inspectable { }
+extension LoginFormView: Inspectable { }
 
 class ViewTestingSampleTests: XCTestCase {
 
@@ -25,12 +26,10 @@ class ViewTestingSampleTests: XCTestCase {
 
     func testExample() throws {
         
-        let view = ContentView()
+        let view = LoginFormView()
         
-        try view.inspect().navigationView().vStack(0).textField(0).setInput("abcdefg")
-        
-        XCTAssertEqual(view.viewModel.text, "abcdefg")
-        
+        try view.inspect().vStack().textField(0).setInput("abcde")
+                
         add(XCTAttachment.init(image: view.snapshot()))
         
     }
