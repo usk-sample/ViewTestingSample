@@ -12,15 +12,17 @@ struct LoginFormView: View {
     @State var name: String = ""
     @State var pass: String = ""
     @State var disabled: Bool = true
-    
+            
     var body: some View {
         VStack(spacing: 32) {
+            
             TextField("user name", text: $name, onCommit: {
                 updateButton()
             }).textFieldStyle(RoundedBorderTextFieldStyle())
             SecureField("password", text: $pass, onCommit: {
                 updateButton()
             }).textFieldStyle(RoundedBorderTextFieldStyle())
+
             Button.init("Login") {
                 debugPrint("do login")
             }.disabled(disabled)
