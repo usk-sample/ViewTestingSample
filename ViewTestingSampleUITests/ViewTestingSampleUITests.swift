@@ -83,4 +83,17 @@ class ViewTestingSampleUITests: XCTestCase {
         
     }
 
+    func testTab() throws {
+        
+        app.launch()
+        
+        app.cells.element(boundBy: 3).tap()
+        
+        app.tabBars.buttons.element(boundBy: 0).tap()
+        add(XCTAttachment(screenshot: app.screenshot()))
+
+        app.tabBars.firstMatch.buttons.element(boundBy: 1).tap()
+        add(XCTAttachment(screenshot: app.screenshot()))
+        
+    }
 }
