@@ -103,8 +103,7 @@ class ViewTestingSampleUITests: XCTestCase {
         
         app.cells.element(boundBy: 4).tap()
         
-        //Switchがタップできない？
-        app.tables.switches.element(boundBy: 0).tap()
+        app.switches.element(boundBy: 0).tap()
         debugPrint(app.switches.element(boundBy: 0))
 
         sleep(2)

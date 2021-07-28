@@ -18,7 +18,7 @@ struct SwitchView: View {
 //        VStack {
 //            Toggle("Switch 1", isOn: $isOn1)
 //            Toggle("Switch 2", isOn: $isOn2)
-//        }
+//        }.padding()
         
         //failed
         List {
