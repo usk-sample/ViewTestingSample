@@ -96,4 +96,26 @@ class ViewTestingSampleUITests: XCTestCase {
         add(XCTAttachment(screenshot: app.screenshot()))
         
     }
+    
+    func testSwitch() throws {
+        
+        app.launch()
+        
+        app.cells.element(boundBy: 4).tap()
+        
+        //Switchがタップできない？
+        app.tables.switches.element(boundBy: 0).tap()
+        debugPrint(app.switches.element(boundBy: 0))
+
+        sleep(2)
+        
+//        add(XCTAttachment(screenshot: app.screenshot()))
+
+        app.switches.element(boundBy: 1).tap()
+//        add(XCTAttachment(screenshot: app.screenshot()))
+        
+        sleep(2)
+
+    }
+    
 }
