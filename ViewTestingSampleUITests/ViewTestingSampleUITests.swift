@@ -117,4 +117,18 @@ class ViewTestingSampleUITests: XCTestCase {
 
     }
     
+    func testSwipe() throws {
+        
+        app.launch()
+        
+        app.cells.element(boundBy: 5).tap()
+        
+        app.tables.firstMatch.swipeUp()
+        app.tables.firstMatch.swipeDown()
+        app.tables.firstMatch.swipeUp(velocity: .fast)
+        app.tables.firstMatch.swipeDown(velocity: .fast)
+
+
+    }
+    
 }
