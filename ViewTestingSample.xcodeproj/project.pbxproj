@@ -19,6 +19,7 @@
 		A849699D26AE45B900F34444 /* SimpleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849699C26AE45B900F34444 /* SimpleNavigationView.swift */; };
 		A849699F26AE4B2100F34444 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849699E26AE4B2100F34444 /* LoginFormView.swift */; };
 		A8C529CB26B137C6005D976E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C529CA26B137C6005D976E /* SwipeView.swift */; };
+		A8C529CD26B139A1005D976E /* ArgumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C529CC26B139A1005D976E /* ArgumentsView.swift */; };
 		A8D165E626B0D600002062B7 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D165E526B0D600002062B7 /* SegmentView.swift */; };
 		A8D165E826B0D9B9002062B7 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D165E726B0D9B9002062B7 /* TabbedView.swift */; };
 		A8D165EA26B0DF7A002062B7 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D165E926B0DF7A002062B7 /* SwitchView.swift */; };
@@ -59,6 +60,7 @@
 		A849699C26AE45B900F34444 /* SimpleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationView.swift; sourceTree = "<group>"; };
 		A849699E26AE4B2100F34444 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
 		A8C529CA26B137C6005D976E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		A8C529CC26B139A1005D976E /* ArgumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentsView.swift; sourceTree = "<group>"; };
 		A8D165E526B0D600002062B7 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		A8D165E726B0D9B9002062B7 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
 		A8D165E926B0DF7A002062B7 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				A8D165E726B0D9B9002062B7 /* TabbedView.swift */,
 				A8D165E926B0DF7A002062B7 /* SwitchView.swift */,
 				A8C529CA26B137C6005D976E /* SwipeView.swift */,
+				A8C529CC26B139A1005D976E /* ArgumentsView.swift */,
 				A82F467E26A80A7E005BED82 /* ViewModel.swift */,
 				A82F468026A80B0C005BED82 /* View+Snapshot.swift */,
 				A82F465126A80690005BED82 /* Assets.xcassets */,
@@ -309,6 +312,7 @@
 				A82F465026A8068F005BED82 /* ContentView.swift in Sources */,
 				A8D165E626B0D600002062B7 /* SegmentView.swift in Sources */,
 				A82F467F26A80A7E005BED82 /* ViewModel.swift in Sources */,
+				A8C529CD26B139A1005D976E /* ArgumentsView.swift in Sources */,
 				A82F464E26A8068F005BED82 /* ViewTestingSampleApp.swift in Sources */,
 				A8D165EA26B0DF7A002062B7 /* SwitchView.swift in Sources */,
 			);

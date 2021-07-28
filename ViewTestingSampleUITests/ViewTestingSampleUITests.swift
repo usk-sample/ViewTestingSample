@@ -127,8 +127,19 @@ class ViewTestingSampleUITests: XCTestCase {
         app.tables.firstMatch.swipeDown()
         app.tables.firstMatch.swipeUp(velocity: .fast)
         app.tables.firstMatch.swipeDown(velocity: .fast)
-
-
+        
+    }
+    
+    func testArguments() throws {
+        
+        app.launchArguments.append("XCUITest")
+        app.launchEnvironment["text"] = "This is debug text!"
+        app.launch()
+        
+        app.cells.element(boundBy: 6).tap()
+        
+        sleep(4)
+        
     }
     
 }

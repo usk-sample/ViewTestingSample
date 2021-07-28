@@ -21,6 +21,7 @@ struct ContentView: View {
                 NavigationLink("Tab", destination: TabbedView())
                 NavigationLink("Switch", destination: SwitchView())
                 NavigationLink("Swipe", destination: SwipeView())
+                NavigationLink("Arguments", destination: ArgumentsView())
 
             }
             .navigationBarTitle("View Testing")
