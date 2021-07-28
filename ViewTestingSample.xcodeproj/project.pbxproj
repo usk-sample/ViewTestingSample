@@ -18,6 +18,7 @@
 		A82F468126A80B0C005BED82 /* View+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F468026A80B0C005BED82 /* View+Snapshot.swift */; };
 		A849699D26AE45B900F34444 /* SimpleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849699C26AE45B900F34444 /* SimpleNavigationView.swift */; };
 		A849699F26AE4B2100F34444 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849699E26AE4B2100F34444 /* LoginFormView.swift */; };
+		A8D165E626B0D600002062B7 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D165E526B0D600002062B7 /* SegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		A82F468026A80B0C005BED82 /* View+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Snapshot.swift"; sourceTree = "<group>"; };
 		A849699C26AE45B900F34444 /* SimpleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationView.swift; sourceTree = "<group>"; };
 		A849699E26AE4B2100F34444 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		A8D165E526B0D600002062B7 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				A82F464F26A8068F005BED82 /* ContentView.swift */,
 				A849699C26AE45B900F34444 /* SimpleNavigationView.swift */,
 				A849699E26AE4B2100F34444 /* LoginFormView.swift */,
+				A8D165E526B0D600002062B7 /* SegmentView.swift */,
 				A82F467E26A80A7E005BED82 /* ViewModel.swift */,
 				A82F468026A80B0C005BED82 /* View+Snapshot.swift */,
 				A82F465126A80690005BED82 /* Assets.xcassets */,
@@ -293,6 +296,7 @@
 				A82F468126A80B0C005BED82 /* View+Snapshot.swift in Sources */,
 				A849699F26AE4B2100F34444 /* LoginFormView.swift in Sources */,
 				A82F465026A8068F005BED82 /* ContentView.swift in Sources */,
+				A8D165E626B0D600002062B7 /* SegmentView.swift in Sources */,
 				A82F467F26A80A7E005BED82 /* ViewModel.swift in Sources */,
 				A82F464E26A8068F005BED82 /* ViewTestingSampleApp.swift in Sources */,
 			);

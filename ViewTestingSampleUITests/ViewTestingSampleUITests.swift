@@ -65,5 +65,22 @@ class ViewTestingSampleUITests: XCTestCase {
         add(XCTAttachment(screenshot: app.screenshot()))
         
     }
+    
+    func testSegmented() throws {
+        
+        app.launch()
+        
+        app.cells.element(boundBy: 2).tap()
+        
+        app.segmentedControls.firstMatch.buttons.element(boundBy: 0).tap()
+        add(XCTAttachment(screenshot: app.screenshot()))
+
+        app.segmentedControls.firstMatch.buttons.element(boundBy: 1).tap()
+        add(XCTAttachment(screenshot: app.screenshot()))
+
+        app.segmentedControls.firstMatch.buttons.element(boundBy: 2).tap()
+        add(XCTAttachment(screenshot: app.screenshot()))
+        
+    }
 
 }

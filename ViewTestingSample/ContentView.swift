@@ -15,8 +15,9 @@ struct ContentView: View {
         NavigationView {
             
             List {
-                NavigationLink.init("Simple Navigation", destination: SimpleNavigationView())
-                NavigationLink.init("Login Form", destination: LoginFormView())
+                NavigationLink("Simple Navigation", destination: SimpleNavigationView())
+                NavigationLink("Login Form", destination: LoginFormView())
+                NavigationLink("Segmented", destination: SegmentView())
             }
             .navigationBarTitle("View Testing")
             
